@@ -16,3 +16,4 @@ jobs:
             echo 'st-1 successfully completed' >> $GITHUB_STEP_SUMMARY
           else
             echo 'st-1 failed' >> $GITHUB_STEP_SUMMARY
+          fi
