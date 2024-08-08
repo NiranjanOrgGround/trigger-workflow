@@ -12,7 +12,7 @@ jobs:
         run: echo 'hello'
         
       - run: |
-          if ${{ steps.st-1.conclusion == success }}; then
+          if [ "${{ steps.st-1.conclusion }}" == "success" ]; then
             echo 'st-1 successfully completed' >> $GITHUB_STEP_SUMMARY
           else
-            echo 'st-1 is failed' >> $GITHUB_STEP_SUMMARY
+            echo 'st-1 failed' >> $GITHUB_STEP_SUMMARY
