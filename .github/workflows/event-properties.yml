@@ -1,8 +1,8 @@
 name: Viewing all properties of an event
 
 on:
-  push:
-  pull_request:
+  # push:
+  # pull_request:
   workflow_dispatch:
   
 jobs:
