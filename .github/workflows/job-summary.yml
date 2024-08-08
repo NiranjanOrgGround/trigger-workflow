@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: st-1
+        continue-on-error: true
         run: echo 'hello'
+        
       - run: |
           if ${{ steps.st-1.conclusion == success }}; then
             echo 'st-1 successfully completed' >> $GITHUB_STEP_SUMMARY
